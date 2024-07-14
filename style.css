@@ -102,7 +102,7 @@ html {
   height: 100vh;
   position: fixed;
   width: 100%;
-  background: white url(items/poke.gif) no-repeat center center;
+  background: white url(icons/poke.gif) no-repeat center center;
   background-size: 15%;
   z-index: 100;
 }
