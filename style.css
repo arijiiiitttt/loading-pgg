@@ -1,0 +1,108 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+#content {
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: column;
+    height: 100vh;
+    background-color:antiquewhite;
+
+
+    /*align the item at center*/
+    .card {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+      position: relative;
+      background-color: white;
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+
+        h2 {
+          font-weight: 900;
+        }
+      }
+
+      .card-image img {
+        width: 100%;
+        margin-top: 3px;
+        margin-bottom: 9px;
+      }
+
+      .card-description {
+        margin-bottom: 8px;
+        font-weight: 400;
+        text-align: center;
+        font-size: 13px;
+
+        hr {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+
+    }
+
+    .btnss {
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      gap: 9px;
+
+      button {
+        margin-top: 8px;
+        background-color: blue;
+        margin-bottom: 3px;
+        border: 1px solid black;
+        padding: 10px;
+        font-weight: 700;
+        color: white;
+        border-radius: 5px;
+
+        button:hover {
+          background-color: red;
+          color: white;
+          transition: .5s;
+
+          .home-button {
+            align-items: right;
+          }
+
+          .cancel-button {
+            align-items: right;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+/*loader*/
+#loader {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background: white url(items/poke.gif) no-repeat center center;
+  background-size: 15%;
+  z-index: 100;
+}
